@@ -7,6 +7,17 @@ const Experience = () => {
   const [theme, toggleTheme] = useContext(ThemeContext);
   return (
     <Container fluid className={theme ? "bg-dark" : "bg-light"}>
+      <div
+        style={{
+          textAlign: "left",
+          paddingBottom: "20px",
+          paddingTop: "20px",
+          paddingLeft: "40px",
+          color: "#777",
+        }}
+      >
+        <h4>Work Experience</h4>
+      </div>
       <Col className="work-container">
         <div className="accordion-container">
           <Accordion
